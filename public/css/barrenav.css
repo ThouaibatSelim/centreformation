@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cantarell;
+}
+
+header {
+    background-color: #242582;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex; /* Utilisation de flexbox pour la disposition */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+}
+
+h2 {
+    margin-right: 20px; /* Ajoute un peu d'espace entre le titre et les listes */
+    flex-shrink: 0; /* Empêche le titre de rétrécir */
+    color: #F64c72;
+}
+
+nav {
+    display: flex; /* Utilise Flexbox pour les listes */
+    justify-content: space-between; /* Espace entre les deux listes */
+    width: 100%; /* Assure que les deux listes occupent toute la largeur */
+}
+
+ol li {
+    border: none;
+    border-radius: 10px;
+    background-color: #242582;
+}
+
+ol, ul {
+    list-style: none; /* Supprime les puces et numéro */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alignement horizontal */
+}
+
+ol li, ul li {
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+}
+
+/* Style des liens */
+ol li a, ul li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #f1f1f1; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s; /* Animation lors du survol */
+}
+
+/* Effet de survol */
+ol li a:hover, ul li a:hover {
+    color: #F64c72; /* Couleur au survol */
+}
+
+ul li.inscription {
+    border: 2px solid #F64c72; /* Bordure de 2px et couleur #F64c72 */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #F64c72; /* Fond de la même couleur que la bordure */
+    padding: 10px 20px; /* Espacement autour du texte */
+    color: white; /* Couleur du texte pour qu'il soit visible sur fond rose */
+    font-weight: bold; /* Texte en gras pour le rendre plus visible */
+    text-align: center; /* Aligner le texte au centre */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation au survol */
+}
+
+ul li.inscription:hover {
+    background-color: white; /* Fond blanc au survol */
+    color: #F64c72; /* Couleur du texte change au survol */
+}
+
+ul li.connexion {
+    border: 2px solid #F64c72; /* Bordure de 2px et couleur #F64c72 */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #242582;
+    padding: 10px 20px; /* Espacement autour du texte */
+    color: #F64c72; /* Couleur du texte pour qu'il soit visible sur fond rose */
+    font-weight: bold; /* Texte en gras pour le rendre plus visible */
+    text-align: center; /* Aligner le texte au centre */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation au survol */
+}
+
+ul li.connexion:hover {
+    background-color: white; /* Fond blanc au survol */
+}
+
+
+

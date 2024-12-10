@@ -4,17 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/inscription.css">
-    <title>Document</title>
+    <title>S'inscrire</title>
 </head>
 <body>
-    <%- include('partials/barredenav') %>
+    <%- include('partials/barrenav') %>
+    <h4 class="inscription">Inscrivez-vous:</h4>
+
+    <!-- Formulaire Incription -->
+     <div class="form-container">
     <form>
-        <label for=""><input type="text"></label>
-        <label for=""><input type="text"></label>
-        <label for=""><input type="text"></label>
-        <label for=""><input type="text"></label>
-        <label for=""><input type="text"></label> 
+        <label for="">Nom:</label>
+        <input type="text" placeholder="Nom" required>
+        <br>
+        <label for="">Prénom:</label>
+        <input type="text" placeholder="Prénom" required>
+        <br> 
+        <label for="">Adresse Mail:</label>
+        <input type="text" placeholder="Adresse Mail" required>
+        <br>
+        <label for="">Date de naissance:</label>
+        <input type="date">
+        <br>
+        <label for="">Numéro de téléphone:</label> 
+        <input type="number" placeholder="Numéro de Téléphone">
+        <br> 
+        <label for="">Dernier diplôme obtenu:</label> 
+        <input type="text" placeholder="Nom complet du diplôme">
+        <br>
+        <label for="">Situation professionelle:</label>
+        <!-- option -->
+        <select name="select"> 
+            <option value="etudiant" selected>Etudiant(e)</option>
+            <option value="salarie" >Salarié(e)</option>
+            <option value="entrepreneur">Entrepreneur(se)</option>
+            <option value="chomeur">Chômeur(se)</option>
+            <option value="autre">Autre</option>
+          </select>
+          <br>
+          <label for="">Créez un mot de passe:</label> 
+        <input type="text" placeholder="Mot de passe">
+        <br>
+          <button>Enregistrer</button>
+          <br> <br>
+          <p>Vous avez déjà un compte? Connectez vous <a href="connexion" target="_blank" >ici</a></p>
     </form>
+<br> <br> <br>
+<br><br> 
+</div>
+
     <%- include('partials/footer') %>
 </body>
 </html>

@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/barredenav.css">
-
+    <link rel="stylesheet" href="css/barrenav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
         <!-- Barre de navigation -->
-        <header>
+        <header class="header">
+            <h2>Centre STF</h2>
             <nav>
-                <h2>Centre de Formation STF</h2>
+                <!-- Liste gauche -->
                 <ol>
+                    <li><a href="accueil">Accueil</a></li>
                     <li><a href="formations" target="_blank">Formations</a></li>
                     <li><a href="partenaires" target="_blank">Nos Partenaires</a></li>
-                    <li><a href="connexion" target="_blank">Se Connecter </a></li>
-                    <li><a href="inscription" target="_blank">S'inscrire</a></li>
                     <li><a href="contact" target="_blank">Nous Contacter</a></li>
                     <li><a href="apropos" target="_blank">A propos de nous</a></li>
                 </ol>
+                <!-- Liste droite -->
+                <ul>
+                    <li class="inscription"><a href="inscription" target="_blank">S'inscrire</a></li>
+                    <li class="connexion"><a href="connexion" target="_blank">Se Connecter</a></li>
+                </ul>
             </nav>
         </header>
+        
 </body>
 </html>

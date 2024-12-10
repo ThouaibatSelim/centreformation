@@ -1,0 +1,27 @@
+body{
+    background-color: #242582;
+    color: #f1f1f1;
+    font-family: Cantarell;
+    height: 100vh;
+}
+
+h3{
+    font-size: x-large;
+}
+
+.partenaires{
+    display: flex;
+    flex: 1;  /* Prend tout l'espace disponible entre le header et le footer */
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;  /* Centre verticalement */
+    flex-direction: column;  /* Organiser les éléments verticalement */
+}
+
+p{
+    padding-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 20px; /* Ajoute un peu d'espace sous le titre */
+    text-align: center; /* Centrer le texte du titre */
+}

@@ -1,0 +1,69 @@
+
+/* Réinitialisation des marges et du padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4{
+    text-align: center;
+    color:#f1f1f1 ;
+    font-size: x-large;
+}
+
+/* Style du body pour utiliser Flexbox */
+body {
+    background-color: #242582;  /* Couleur de fond */
+    color: #f1f1f1;  /* Couleur du texte */
+    font-family: Cantarell;  /* Police de caractères */
+    justify-content: center; 
+    align-items: center;  /* Centrer verticalement */
+    height: 100vh;  /* Hauteur de la fenêtre */
+
+}
+
+/* Style du formulaire */
+.form-container {
+    display: flex;
+    justify-content: center;  /* Centrer horizontalement */
+    align-items: center;  /* Centrer verticalement */
+    padding-top: 45px;  /* Pour un peu d'espace au-dessus du formulaire */
+    padding-bottom: 55px;  /* Pour un peu d'espace en-dessous du formulaire */
+  }
+  
+  form {
+    background-color: #f12350;  /* Fond du formulaire */
+    padding: 20px;  /* Réduit le padding interne du formulaire */
+    border-radius: 10px;
+    width: 80%;  /* Largeur du formulaire */
+    max-width: 500px;  /* Largeur maximale du formulaire */
+    margin-bottom: 30px;  /* Réduit l'espace sous le formulaire */
+    text-align: center;
+  }
+  
+  input, select {
+    font-family: Cantarell;
+    font-size: 10px;
+    padding: 10px;
+    width: 95%; /* Prend toute la largeur de son conteneur */
+    margin: 10px 0;  /* Espacement entre les éléments */
+    border: 1px solid #ccc;  /* Bordure claire */
+    border-radius: 5px;  /* Coins arrondis */
+  }
+  
+  button {
+    font-family: Cantarell;
+    font-size: 10px;
+    background-color: #2F2FA2;  /* Couleur du bouton */
+    color: #fff;  /* Couleur du texte */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  /* Curseur survol */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #a3a3dd;
+  }

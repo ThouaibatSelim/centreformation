@@ -1,3 +1,51 @@
-body{
-    background-color: blue;
+body {
+    background-color: #242582;
+    font-family: Cantarell;
+    margin: 0;  /* Retirer les marges par défaut */
+    padding: 0; /* Retirer le padding par défaut */
+}
+
+/* Style du titre principal */
+h1 {
+    color: #f1f1f1;
+    text-align: center; /* Centrer le texte du titre */
+    margin: 20px 0; /* Espacement autour du titre */
+    font-size: 2.5em; /* Taille de la police du titre */
+}
+
+/* Style des titres secondaires */
+h3 {
+    font-size: 1.8em; /* Taille de la police */
+    margin: 20px 0; /* Espacement autour des titres */
+    color: #f1f1f1; /* Couleur du titre */
+}
+
+/* Style des listes */
+ul {
+    list-style: none;  /* Retirer les puces des listes */
+    padding: 10px; /* Ajouter du padding à l'intérieur des listes */
+    margin-bottom: 20px; /* Espacement entre les listes */
+}
+
+/* Espacement entre les éléments des listes */
+ul li {
+    margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+    border: 2px outset  #6a3791; /* Bordure claire autour de chaque liste */
+    border-radius: 8px; /* Coins arrondis pour un effet plus doux */
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+li{
+    background-color: #6a3791; 
+    color: black;
+}
+
+/* Style des liens */
+a {
+    color: black;
+    text-decoration: none;  /* Supprimer le soulignement des liens */
+    font-weight: bold;  /* Mettre les liens en gras */
+    transition: color 0.3s ease; /* Animation pour la couleur au survol */
 }
