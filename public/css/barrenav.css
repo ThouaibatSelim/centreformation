@@ -1,19 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-<<<<<<< HEAD
 body {
-=======
-body{
->>>>>>> origin
     font-family: Cantarell;
 }
 
 header {
-<<<<<<< HEAD
     background-color: #242582;
     color: #f1f1f1;
     padding: 10px 20px;
@@ -34,57 +24,31 @@ nav {
     width: 100%; /* Assure que les deux listes occupent toute la largeur */
 }
 
-ol li {
-    border: none;
-    border-radius: 10px;
+.liste {
     background-color: #242582;
 }
 
-ol, ul {
+.liste{
     list-style: none; /* Supprime les puces et numéro */
     margin: 0;
     padding: 0;
-    display: flex; /* Alignement horizontal */
+    display: flex;  /*Alignement horizontal */
 }
 
-=======
-    background-color: #65CCB8;
-    color: #182626;
-    padding: 10px 20px;
-    display: flex; /* Utilisation de flexbox pour la disposition */
-    justify-content: space-between; /* Espacement entre les deux listes */
-    align-items: center; /* Aligne les éléments verticalement */
-}
-
-/* Suppression des puces et marges pour la liste ordonnée */
-ol, ul {
-    list-style: none; /* Supprime les puces */
-    margin: 0; /* Supprime la marge */
-    padding: 0; /* Supprime le padding */
-    display: flex; /* Alignement horizontal */
-}
-
-/* Espacement entre les éléments de la liste */
->>>>>>> origin
 ol li, ul li {
     margin-right: 20px; /* Espacement entre les éléments de la liste */
 }
 
 /* Style des liens */
-ol li a, ul li a {
+.liste a {
     text-decoration: none; /* Supprime le soulignement des liens */
-<<<<<<< HEAD
     color: #f1f1f1; /* Couleur du texte */
-=======
-    color: #182626; /* Couleur du texte */
->>>>>>> origin
     font-weight: bold; /* Texte en gras */
     transition: color 0.3s; /* Animation lors du survol */
 }
 
 /* Effet de survol */
 ol li a:hover, ul li a:hover {
-<<<<<<< HEAD
     color: #F64c72; /* Couleur au survol */
 }
 
@@ -119,10 +83,3 @@ ul li.connexion:hover {
     background-color: white; /* Fond blanc au survol */
 }
 
-
-
-=======
-    color: #FFD700; /* Couleur au survol */
-}
-
->>>>>>> origin
