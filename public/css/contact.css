@@ -8,10 +8,20 @@ h3{
     font-size: xx-large;
 }
 
-ol li {
-    font-size: large;
+.pagedecontact{
+    font-size: x-large;
+    list-style: none;
+}
+
+ol li a {
+    text-decoration: underline;
+    color: #242582;
 }
 
 .contact {
-    display: list-item;
+    border: #f1f1f1 solid 1px;
+    border-width: 100px;
+    color: #242582;
+    background-color: #f1f1f1;
+    padding: 20px;
 } 

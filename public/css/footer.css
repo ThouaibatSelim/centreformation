@@ -15,15 +15,25 @@ footer {
 
 h5{
     color: #060606;
+    font-size: medium;
 }
 
 .foot{
     color: #060606;
 }
 
+i{
+    color: black;
+}
+
 .myclass{
     list-style: none;
 }
 
+.myclass li a {
+    color: #060606;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 

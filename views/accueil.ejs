@@ -9,31 +9,37 @@
 <body>
 
     <%- include('partials/barrenav') %>
+    <main>
+        <br> <br>
 
-    <img src="/public/img/phraseaccroche.jpg" alt="image1" width="100px">
+        <img src="/images/phraseaccroche.jpg" alt="image1" width="900px" height="600px">
+            <br><br>
 
-    <!-- Présentation du centre -->
-    <h3>Etudiant? Salarié en reconversion? Vous trouverez ce que vous cherchez ici!</h3>
+        <!-- Présentation du centre -->
+        <h3>Etudiant? Salarié en reconversion? Vous trouverez ce que vous cherchez ici!</h3>
 
-    <p>Développez vos compétences digitales et façonnez l’avenir de la tech grâce à nos formations sur mesure en développement web, design et marketing numérique.
-        Préparez votre avenir dès aujourd’hui : devenez un expert du numérique avec des cours pratiques et certifiants.
-        Transformez vos idées en succès numérique : apprenez les outils du web avec des experts passionnés. Maîtrisez les métiers du digital et boostez votre 
-        carrière dans un monde connecté en perpétuelle évolution. Plongez dans l’univers du web et du digital grâce à des formations innovantes, accessibles à tous les niveaux avec 
-        le centre STF.</p>
-        <br><br><br>
+        <p>Le Centre de Formation STF Mayotte propose des formations diversifiées dans des secteurs 
+            clés tels que le web, le digital, le marketing, les ressources humaines, ainsi que le social 
+            et la santé. Ces formations visent à développer des compétences pratiques et professionnelles, 
+            adaptées aux besoins du marché local, afin de préparer les apprenants à réussir dans un marché 
+            en constante évolution. Construisez grâce à des formations innovantes, accessibles à tous les niveaux 
+            avec le centre STF Mayotte.</p>
+            <br><br><br>
 
-    <!-- Recherche de formation -->
-    <h1>Trouvez Votre Formation</h1>    
-    <input type="text" placeholder="Entrez le nom de votre formation">
-<br> <br> <br>
-    <!-- Les différents centres -->
-    <h3>Nos centres de formation</h3>
-    <p>Notre centre de formation est présent dans plusieurs localités de l'île, 
-        pour être toujours au plus près de vous et de vos ambitions.</p>
-
-        <img src="/public/img/mayottemap.gif" alt="mayotte carte" width="300px">
-
-            <%- include('partials/footer') %>
-
+        <!-- Recherche de formation -->
+        <h1>Trouvez Votre Formation</h1>
+        <div class="divmain">    
+        <input type="text" placeholder="Recherchez une formation" class="myinput">
+        </div>
+        <br> <br> <br> <br> <br>
+        <!-- Les différents centres -->
+        <h3>Nos centres de formation</h3>
+        <p>Notre centre de formation est présent dans plusieurs localités de l'île, 
+            pour être toujours au plus près de vous et de vos ambitions.</p>
+        <br>
+            <img src="/images/mayottemap.gif" alt="mayotte carte" width="700px">
+        <br><br>
+        <%- include('partials/footer') %>
+    </main>
 </body>
 </html>

@@ -2,27 +2,53 @@ body{
     background-color: #242582;
     color: #f1f1f1;
     font-family: Cantarell;
+
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h3{
     font-size: x-large;
-    text-align: center;
 }
 
 p{
     text-align: center;
+    font-size: larger;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1 {
     margin-bottom: 20px; /* Ajoute un peu d'espace sous le titre */
-    text-align: center; /* Centrer le texte du titre */
+    /* text-align: center; Centrer le texte du titre */
+}
+
+.divmain{
+    display: flex;
+    justify-content: center;
+}
+
+.myinput{
+/* margin-left: 797px;
+margin-right: 500px; */
+width: 300px; /* Définir une largeur spécifique pour l'input */
+padding: 15px 20px; /* Augmente le padding pour un input plus grand */
+position: absolute;
 }
 
 input {
     font-family: Cantarell;
     font-size: 20px; /* Augmente la taille du texte */
-    padding: 15px 20px; /* Augmente le padding pour un input plus grand */
-    width: 300px; /* Définir une largeur spécifique pour l'input */
     border: 2px solid #f1f1f1; /* Bordure de couleur claire */
     border-radius: 5px; /* Coins arrondis */
     text-align: center; /* Centrer le texte à l'intérieur de l'input */
@@ -30,6 +56,6 @@ input {
 }
 
 input:focus {
-    border-color: #cc65be; /* Change la couleur de la bordure au survol */
+    background-color: #a3a3dd; /* Change la couleur de la bordure au survol */
     outline: none; /* Supprime l'outline par défaut */
 }

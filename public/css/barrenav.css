@@ -10,6 +10,7 @@ header {
     display: flex; /* Utilisation de flexbox pour la disposition */
     justify-content: space-between; /* Espacement entre les éléments */
     align-items: center; /* Alignement vertical des éléments */
+    position: sticky;
 }
 
 h2 {
@@ -26,17 +27,18 @@ nav {
 
 .liste {
     background-color: #242582;
+    margin : auto;
 }
 
 .liste{
     list-style: none; /* Supprime les puces et numéro */
-    margin: 0;
+    gap: 20px;
     padding: 0;
     display: flex;  /*Alignement horizontal */
 }
 
 ol li, ul li {
-    margin-right: 20px; /* Espacement entre les éléments de la liste */
+    margin-right: 30px; /* Espacement entre les éléments de la liste */
 }
 
 /* Style des liens */
@@ -45,6 +47,10 @@ ol li, ul li {
     color: #f1f1f1; /* Couleur du texte */
     font-weight: bold; /* Texte en gras */
     transition: color 0.3s; /* Animation lors du survol */
+}
+
+#droite {
+    gap: 0px;
 }
 
 /* Effet de survol */
