@@ -37,7 +37,7 @@ body {
     padding: 20px;  /* Réduit le padding interne du formulaire */
     border-radius: 10px;
     width: 80%;  /* Largeur du formulaire */
-    max-width: 500px;  /* Largeur maximale du formulaire */
+    max-width: 650px;  /* Largeur maximale du formulaire */
     margin-bottom: 30px;  /* Réduit l'espace sous le formulaire */
     text-align: center;
   }

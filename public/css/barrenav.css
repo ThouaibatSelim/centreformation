@@ -58,6 +58,10 @@ ol li a:hover, ul li a:hover {
     color: #F64c72; /* Couleur au survol */
 }
 
+ol li a:active, ul li a:active {
+    transform: scale(0.9); /* effet click */
+}
+
 ul li.inscription {
     border: 2px solid #F64c72; /* Bordure de 2px et couleur #F64c72 */
     border-radius: 5px; /* Coins arrondis */

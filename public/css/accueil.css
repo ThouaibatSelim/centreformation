@@ -9,7 +9,6 @@ main{
     display: grid;
     place-items: center;
     height: 100vh;
-
 }
 
 img {
@@ -19,6 +18,7 @@ img {
 
 h3{
     font-size: x-large;
+    color: #F64c72;
 }
 
 p{
@@ -30,7 +30,7 @@ p{
 
 h1 {
     margin-bottom: 20px; /* Ajoute un peu d'espace sous le titre */
-    /* text-align: center; Centrer le texte du titre */
+    color: #F64c72;
 }
 
 .divmain{

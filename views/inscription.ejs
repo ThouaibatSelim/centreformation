@@ -10,28 +10,29 @@
     <%- include('partials/barrenav') %>
     <h4 class="inscription">Inscrivez-vous:</h4>
 
-    <!-- Formulaire Incription -->
+    <!-- Formulaire Inscription -->
      <div class="form-container">
     <form>
-        <label for="">Nom:</label>
-        <input type="text" placeholder="Nom" required>
+        <label for="nom">Nom:</label>
+        <input type="text" placeholder="Nom" id="nom" required>
         <br>
-        <label for="">Prénom:</label>
-        <input type="text" placeholder="Prénom" required>
+        <label for="prenom">Prénom:</label>
+        <input type="text" placeholder="Prénom" id="prenom" required>
         <br> 
-        <label for="">Adresse Mail:</label>
+        <label for="adressemail">Adresse Mail:</label>
         <input type="text" placeholder="Adresse Mail" required>
         <br>
-        <label for="">Date de naissance:</label>
+        <label for="date">Date de naissance:</label>
         <input type="date">
         <br>
-        <label for="">Numéro de téléphone:</label> 
+        <label for="numero">Numéro de téléphone:</label> 
         <input type="number" placeholder="Numéro de Téléphone">
         <br> 
-        <label for="">Dernier diplôme obtenu:</label> 
+        <label for="diplome">Dernier diplôme obtenu:</label> 
         <input type="text" placeholder="Nom complet du diplôme">
         <br>
-        <label for="">Situation professionelle:</label>
+
+        <label for="situationpro">Situation professionelle:</label>
         <!-- option -->
         <select name="select"> 
             <option value="etudiant" selected>Etudiant(e)</option>
@@ -54,4 +55,3 @@
 
     <%- include('partials/footer') %>
 </body>
-</html>

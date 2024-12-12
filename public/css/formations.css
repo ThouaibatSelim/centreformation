@@ -29,7 +29,8 @@ h1 {
 h3 {
     font-size: 1.8em; /* Taille de la police */
     margin: 20px 0; /* Espacement autour des titres */
-    color: #f1f1f1; /* Couleur du titre */
+    color: #F64c72;
+    /* Couleur du titre */
 }
 
 /* Espacement entre les éléments des listes */
