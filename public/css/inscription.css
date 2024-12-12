@@ -1,4 +1,3 @@
-
 /* Réinitialisation des marges et du padding */
 * {
     margin: 0;
@@ -6,50 +5,50 @@
     box-sizing: border-box;
 }
 
+/* Body*/
+body {
+    background-color: #242582;  /* Couleur de fond */
+    color: #f1f1f1;  /* Couleur du texte */
+    font-family: Cantarell;  /* Police*/
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;  /* Centrer verticalement */
+    height: 100vh;  /* Hauteur de la fenêtre */
+
+}
+/*h4*/
 h4{
     text-align: center;
     color:#f1f1f1 ;
     font-size: x-large;
 }
 
-/* Style du body pour utiliser Flexbox */
-body {
-    background-color: #242582;  /* Couleur de fond */
-    color: #f1f1f1;  /* Couleur du texte */
-    font-family: Cantarell;  /* Police de caractères */
-    justify-content: center; 
-    align-items: center;  /* Centrer verticalement */
-    height: 100vh;  /* Hauteur de la fenêtre */
-
-}
-
-/* Style du formulaire */
+/* Formulaire */
 .form-container {
-    display: flex;
-    justify-content: center;  /* Centrer horizontalement */
-    align-items: center;  /* Centrer verticalement */
-    padding-top: 45px;  /* Pour un peu d'espace au-dessus du formulaire */
-    padding-bottom: 55px;  /* Pour un peu d'espace en-dessous du formulaire */
+    display: flex; /*Aligner*/
+    justify-content: center;  /* Centrer */
+    align-items: center;  
+    padding-top: 45px;  /*Espace au-dessus du formulaire */
+    padding-bottom: 55px;  /*Espace en-dessous du formulaire */
   }
   
-  form {
-    background-color: #f12350;  /* Fond du formulaire */
-    padding: 20px;  /* Réduit le padding interne du formulaire */
-    border-radius: 10px;
-    width: 80%;  /* Largeur du formulaire */
-    max-width: 650px;  /* Largeur maximale du formulaire */
-    margin-bottom: 30px;  /* Réduit l'espace sous le formulaire */
+form {
+    background-color: #f12350;  /* Fond*/
+    padding: 20px;  /*padding interne */
+    border-radius: 10px; /* arrondi */
+    width: 80%;  /* Largeur*/
+    max-width: 650px;  /* Largeur maximale*/
+    margin-bottom: 30px;  /*espace sous le formulaire */
     text-align: center;
-  }
+}
   
   input, select {
     font-family: Cantarell;
-    font-size: 10px;
+    font-size: 10px; /*taille de la police*/
     padding: 10px;
     width: 95%; /* Prend toute la largeur de son conteneur */
-    margin: 10px 0;  /* Espacement entre les éléments */
-    border: 1px solid #ccc;  /* Bordure claire */
-    border-radius: 5px;  /* Coins arrondis */
+    margin: 10px 0; 
+    border: 1px solid #ccc;  /* Bordure */
+    border-radius: 5px;
   }
   
   button {
@@ -66,4 +65,8 @@ body {
   
   button:hover {
     background-color: #a3a3dd;
+  }
+
+  button:active{
+    transform: scale(0.9); /* effet click */
   }

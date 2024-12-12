@@ -1,3 +1,4 @@
+/* body */
 body {
     background-color: #242582;
     font-family: Cantarell;
@@ -5,27 +6,15 @@ body {
     padding: 0; /* Retirer le padding par défaut */
 }
 
-/* Style du titre principal */
+/* h1 */
 h1 {
     color: #f1f1f1;
-    text-align: center; /* Centrer le texte du titre */
+    text-align: center;
     margin: 20px 0; /* Espacement autour du titre */
     font-size: 2.5em; /* Taille de la police du titre */
 }
 
-.formations{
-    color: black;
-}
-
-.formations {
-    list-style: none;  /* Retirer les puces des listes */
-    padding: 10px; /* Ajouter du padding à l'intérieur des listes */
-    margin-bottom: 20px; /* Espacement entre les listes */
-    display: flex;
-
-}
-
-/* Style des titres secondaires */
+/* h3*/
 h3 {
     font-size: 1.8em; /* Taille de la police */
     margin: 20px 0; /* Espacement autour des titres */
@@ -33,22 +22,27 @@ h3 {
     /* Couleur du titre */
 }
 
-/* Espacement entre les éléments des listes */
+/* listes */
+.formations {
+    list-style: none;  /* Retirer les puces des listes */
+    padding: 10px; /* Ajouter du padding à l'intérieur des listes */
+    margin-bottom: 20px; /* Espacement entre les listes */
+    display: flex;
+}
+
+/* Bordures */
 ul li {
     margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
     border: 2px outset  #cf3456; /* Bordure claire autour de chaque liste */
     border-radius: 8px; /* Coins arrondis pour un effet plus doux */
     padding-bottom: 30px;
+    color: rgb(87, 38, 133);
+    font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    color: black;
     background-color: #f1f1f1; 
 }
 
-ul li .formations:hover {
-    color: #242582;
-}
-
-/* Style des liens */
+/*Liens */
 a {
     text-decoration: none;  /* Supprimer le soulignement des liens */
     font-weight: bold;  /* Mettre les liens en gras */

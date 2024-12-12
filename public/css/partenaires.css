@@ -1,31 +1,36 @@
+/* Body */
 body{
-    background-color: #242582;
+    background-color: #242582; 
     color: #f1f1f1;
     font-family: Cantarell;
     height: 100vh;
 }
 
+/*h1*/
+h1 {
+    margin-bottom: 20px; /* Espace sous le titre */
+    text-align: center; /* Centrer le texte*/
+}
+
+/*h3*/
 h3{
     font-size: x-large;
     color: #F64c72;
 }
 
+/*div*/
 .partenaires{
-    display: flex;
+    display: flex; /*alignement de tous les éléments de la page*/
     flex: 1;  /* Prend tout l'espace disponible entre le header et le footer */
     justify-content: center;  /* Centre horizontalement */
     align-items: center;  /* Centre verticalement */
     flex-direction: column;  /* Organiser les éléments verticalement */
 }
 
-p{
+/*paragraphe*/
+p{ /*espace droite, gauche et bas */
     padding-bottom: 50px;
     padding-left: 100px;
     padding-right: 100px;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px; /* Ajoute un peu d'espace sous le titre */
-    text-align: center; /* Centrer le texte du titre */
+    text-align: center; /*centrer le texte*/
 }

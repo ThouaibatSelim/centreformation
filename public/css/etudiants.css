@@ -1,0 +1,91 @@
+/*body*/
+body{
+    background-color: #242582;
+    color: #f1f1f1;
+    font-family: Cantarell;
+}
+
+
+/*h3*/
+h3{
+    font-size: xx-large;
+    text-decoration: underline;
+    padding-left: 30px;
+}
+
+/*h4*/
+h4{
+    font-size: x-large;
+    text-decoration: underline;
+    padding-left: 5x;
+}
+
+/*liste*/
+.etudiants{
+    font-size: x-large;
+    list-style: none;
+    color: #f1f1f1;
+    padding-left: 30px;
+}
+
+input{
+    font-family: Cantarell;
+}
+
+.modif{
+    background-color:#F64c72;
+    font-family: Cantarell;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.supp{
+    background-color:#F64c72;
+    font-family: Cantarell;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+input:active{
+    transform: scale(0.9); /* effet click */
+}
+
+/* Formulaire */
+  
+form {
+    background-color: #242582;
+    padding: 20px;  /*padding interne */
+    border: #6666cc outset 1px;
+    border-radius: 10px; /* arrondi */
+    width: 80%;  /* Largeur*/
+    max-width: 600px;  /* Largeur maximale*/
+    margin-bottom: 30px;  /*espace sous le formulaire */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+button {
+    font-family: Cantarell;
+    font-size: 10px;
+    background-color:#F64c72;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  /* Curseur survol */
+    transition: background-color 0.3s ease;
+}
+  
+  button:hover {
+    background-color: #a3a3dd;
+  }
+
+  button:active{
+    transform: scale(0.9); /* effet click */
+  }

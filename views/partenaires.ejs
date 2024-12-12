@@ -12,7 +12,15 @@
     <h1>Nos Partenaires</h1>
     <br>
     <div class="partenaires">
-    <h3>Le Conseil Départemental</h3>
+
+        <!-- Liste des partenaires -->
+
+        <% resultat.forEach (p => { %>
+
+            <h3>  <%= p.nom_partenaire %></h3>
+    
+        <% }) %>
+    
     <p>Le Conseil Départemental de Mayotte est un partenaire privilégié de STF Mayotte depuis sa création en 2016. 
         Grâce à ce partenariat, le centre bénéficie d'un soutien essentiel pour offrir des formations adaptées aux besoins 
         du territoire. Le Conseil Départemental participe activement au développement des compétences locales, contribuant 

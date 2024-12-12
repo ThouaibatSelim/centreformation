@@ -1,11 +1,13 @@
+/* body */
 body{
     background-color: #242582;  /* Couleur de fond */
     display: flex;
-    flex-direction: column;  /* Les éléments dans le body seront disposés verticalement */
+    flex-direction: column;  /*disposition verticalement */
     height: 100vh;  /* Hauteur de la fenêtre */
     margin: 0;  /* Retire les marges par défaut */
 }
 
+/* h3 */
 h3{
     text-align: center;
     color: #f1f1f1;
@@ -13,10 +15,10 @@ h3{
     margin-bottom: 20px;  /* Espacement sous le titre */
 }
 
-
+/* formulaire */
 form {
-    background-color: #f12350;  /* Fond du formulaire */
-    padding: 20px;  /* Réduit le padding interne du formulaire */
+    background-color: #f12350;
+    padding: 20px;
     border-radius: 10px;
     width: 80%;  /* Largeur du formulaire */
     max-width: 500px;  /* Largeur maximale du formulaire */
@@ -27,18 +29,19 @@ form {
   .formulaire {
     display: flex;
     flex: 1;  /* Prend tout l'espace disponible entre le header et le footer */
-    justify-content: center;  /* Centre horizontalement */
-    align-items: center;  /* Centre verticalement */
-    flex-direction: column;  /* Organiser les éléments verticalement */
-}
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+/*input  */
   input{
     font-family: Cantarell;
     font-size: 10px;
     padding: 10px;
-    width: 95%; /* Prend toute la largeur de son conteneur */
+    width: 95%;
     margin: 10px 0;  /* Espacement entre les éléments */
-    border: 1px solid #ccc;  /* Bordure claire */
+    border: 1px solid #ccc;  /* Bordure*/
     border-radius: 5px;  /* Coins arrondis */
   }
 

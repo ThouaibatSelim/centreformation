@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/etudiants.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Etudiants</title>
+</head>
+<body>
+    <%- include('partials/barrenav') %>
+
+    <main>
+    <h3>Nos étudiants</h3>
+    <ol class="etudiants">
+        <% resultat.forEach (i => { %>
+        <li><%= i.nom_client %> <%= i.prenom_client %> <%= i.date_naissance %> <%= i.genre_client %></li>
+        <!-- bouton modifier, supprimer -->
+        <input type="button" value="Modifier" class="modif"  onclick="remplirDonnees('<%= i.id_client %>', '<%= i.nom_client %>', '<%= i.prenom_client  %>', '<%= i.date_naissance %>', '<%= i.genre_client %>')">
+        <input type="button" value="Supprimer" class="supp" onclick="supprimerDonnees('<%= i.id_client %>') ">
+        <% }) %>
+        
+<br><br>
+
+<!-- Saisie nouvel étudiant -->
+        <h4>Nouvel étudiant</h4>
+        <br> 
+        <form action="/new" method="post" id="modif">
+            <input type="hidden" name="id" id="id">
+            <label for="">Nom:</label>
+            <input type="text" id="nom" name="nom"  placeholder="Nom">
+        <br><br>
+        <label for="">Prénom:</label>
+        <input type="text" id="prenom" name="prenom"   placeholder="Prénom">
+        <br><br>   
+        <label for="date">Date de naissance:</label>
+        <input type="date" id="datedenaissance">
+        <br> <br>
+        <label for="genre">Genre:</label>
+        <!-- genre -->
+        <select name="select" id="genre"> 
+          <option value="Femme">Femme</option>
+          <option value="Homme" >Homme</option>
+        </select> 
+<br> <br>
+            <button type="submit" class="Enregistrer">Enregistrer</button>
+    
+
+    </ol>
+</main>
+<%- include('partials/footer') %>
+</body>
+
+<script> 
+    function remplirDonnees(id, nom, prenom, age){
+        document.querySelector("#nom").value = nom;
+        document.querySelector("#prenom").value = prenom;
+        document.querySelector("#age").value = age;
+    }
+
+    function supprimerDonnees(nom, prenom, age){
+        let routeComplete = "new/" + id;
+        
+        fetch(
+            routeComplete, {method : "DELETE"}
+        ).then(
+            (response) => response.json()
+        ).then(
+            (donnee) => window.location.href = donnee.routeRacine
+        )
+    }
+</script>
+</html>

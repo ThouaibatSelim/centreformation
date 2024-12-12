@@ -12,11 +12,12 @@
     <footer>
         <h5>Centre de Formation STF Mayotte</h5>
 
-        <!-- Icônes réseaux sociaux -->
-        <i class="fa-brands fa-facebook"><a href="#"></a></i> 
-        <i class="fa-brands fa-instagram"><a href="#"></a></i>
-        <i class="fa-brands fa-x-twitter"><a href="#"></a></i>
+        <!-- Icônes et liens réseaux sociaux -->
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a> 
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/?lang=fr" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a>
 
+        <!-- Liens utiles -->
         <ol class="myclass">
             <li><a href="contact">Contactez-nous</a></li>
             <li><a href="#">Abonnez vous à notre newsletter</a></li>
@@ -26,8 +27,15 @@
         </ol>
 
         <br> <br>
-        <p class="foot"><span id="currentyear">2024 STF Mayotte. Tous droits réservés© </span></p>
-        
+        <p class="foot"><span id="currentyear"></span></p>
+
     </footer>
 </body>
+
+<script>
+    //Afficher année actuelle dans le footer
+const date = new Date();
+const elementDate = document.querySelector ("#currentyear");
+elementDate.textContent += `${date.getFullYear()} STF Mayotte. Tous droits réservés© `;
+</script>
 </html>

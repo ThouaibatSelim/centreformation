@@ -11,16 +11,17 @@
     <%- include('partials/barrenav') %>
 <h1>Découvrez toutes nos formations</h1>
 
+<!-- Liste formations -->
+
 <div class="mydiv">
 <h3>Informatique:</h3>
+
 <ul class="formations">
-    <li><a href="#">Développeur Web (Full-Stack) (Bac+3)</a></li>
-    <li><a href="#">Web Master (Bac+5)</a></li>
-    <li><a href="#">Technicien Supérieur Système et Réseau (Bac+2)</a></li>
-    <li><a href="">Administrateur Système & Réseau (Bac+4)</a></li>
-    <li><a href="#">Data Analyst (Bac+4)</a></li>
-    <li><a href="#">Cybersécurité (Bac+5)</a></li>
-    <li><a href="#">Testeur de Logiciel (Bac+3)</a></li>
+    <% resultat.forEach (f => { %>
+
+        <li> <%= f.nom_formation %>  <%=f.niveau_formation %> </li>
+
+    <% }) %>
 </ul>
 
 <h3>Marketing:</h3>

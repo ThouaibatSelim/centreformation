@@ -1,10 +1,11 @@
-
+/*tout*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*footer*/
 footer {
     font-family: Cantarell;
     background-color: #a3a3dd;
@@ -13,19 +14,20 @@ footer {
     width: 100%;  /* Assure que le footer occupe toute la largeur */
 }
 
+/*h5*/
 h5{
     color: #060606;
     font-size: medium;
 }
 
-.foot{
-    color: #060606;
-}
-
+/*icones*/
 i{
     color: black;
+    width: 20px;
+    
 }
 
+/*listes*/
 .myclass{
     list-style: none;
 }
@@ -35,5 +37,14 @@ i{
     text-decoration: underline;
     font-weight: bold;
 }
+
+/*paragraphe copyright*/
+.foot{
+    color: #060606;
+}
+
+
+
+
 
 

@@ -1,3 +1,4 @@
+/* body */
 body{
     background-color: #242582;
     color: #f1f1f1;
@@ -5,22 +6,26 @@ body{
 
 }
 
+/* main */
 main{
     display: grid;
     place-items: center;
     height: 100vh;
 }
 
+/* image */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* h3 */
 h3{
     font-size: x-large;
     color: #F64c72;
 }
 
+/* phrase d'accroche */
 p{
     text-align: center;
     font-size: larger;
@@ -28,34 +33,33 @@ p{
     padding-right: 100px;
 }
 
+/* h1 */
 h1 {
     margin-bottom: 20px; /* Ajoute un peu d'espace sous le titre */
     color: #F64c72;
 }
 
-.divmain{
+/* input */
+.divinput{
     display: flex;
     justify-content: center;
 }
 
 .myinput{
-/* margin-left: 797px;
-margin-right: 500px; */
-width: 300px; /* Définir une largeur spécifique pour l'input */
-padding: 15px 20px; /* Augmente le padding pour un input plus grand */
-position: absolute;
+width: 300px; /*largeur */
+padding: 15px 20px; /* Augmente le padding */
 }
 
 input {
     font-family: Cantarell;
-    font-size: 20px; /* Augmente la taille du texte */
-    border: 2px solid #f1f1f1; /* Bordure de couleur claire */
-    border-radius: 5px; /* Coins arrondis */
+    font-size: 20px;
+    border: 2px solid #f1f1f1; /* Bordure */
+    border-radius: 5px;
     text-align: center; /* Centrer le texte à l'intérieur de l'input */
-    transition: border-color 0.3s ease; /* Animation au focus */
 }
 
+/*effet focus*/
 input:focus {
-    background-color: #a3a3dd; /* Change la couleur de la bordure au survol */
-    outline: none; /* Supprime l'outline par défaut */
+    background-color: #eeeef8; /* Change de couleur */
+    outline: none; /* Supprime l'outline noire par défaut */
 }

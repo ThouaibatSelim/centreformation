@@ -43,29 +43,6 @@ INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Cybersécurit�
 
 INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Testeur de Logiciel", "(Bac+3)");
 
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Chargé de Marketing et Communication", "(Bac+3)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Responsable marketing et commercial)", "(Bac+5)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Consultant marketing", "(Bac+5)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Chargé de clientèle", "(Bac+3)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Directeur des Ressources Humaines", "(Bac+5)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Secrétaire des Ressources Humaines", "(Bac+2)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Gestionnaire de Paie", "(Bac+3)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Assistant Social", "(Bac+3)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("ATSEM", "(Bac+3)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Educateur Spécialisé", "(Bac+2)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Sécrétaire Médical", "(Bac+2)");
-
-INSERT INTO formations (nom_formation, niveau_formation) VALUES ("Technicien d'Information Médical", "(Bac+2)");
 
 --partenaires
 INSERT INTO partenaires (nom_partenaire, annee_partenariat) VALUES ("Conseil Départemental", 2016);
@@ -96,4 +73,32 @@ INSERT INTO horaires (jour, ouverture, fermeture) VALUES ("Dimanche", "00:00:00"
 ALTER TABLE apropos CHANGE présentation_centre presentation_centre VARCHAR(16383);
 
 INSERT INTO apropos (presentation_centre) VALUES ("Le Centre de Formation STF Mayotte, fondé en 2016 par Mariama Bacar, s'est engagé à contribuer activement au développement économique et social de Mayotte en offrant des formations professionnelles dans des secteurs en pleine expansion. Son objectif principal est de répondre aux besoins croissants des entreprises locales tout en préparant les apprenants aux défis du marché du travail moderne. STF Mayotte se distingue par son approche innovante et son adaptation aux réalités locales. Mayotte, un territoire en pleine mutation, nécessite des compétences spécifiques dans des domaines stratégiques tels que le web, le digital, le marketing, les ressources humaines, ainsi que le secteur social et la santé. En proposant des formations de qualité dans ces secteurs, le centre offre aux jeunes et aux adultes une opportunité de se qualifier pour des emplois locaux ou internationaux, tout en renforçant la compétitivité économique de l'île. Les formations proposées couvrent un large éventail de domaines, à commencer par le web et le digital, où les apprenants acquièrent des compétences en développement web, gestion de projets numériques, et utilisation des outils numériques essentiels dans le monde professionnel d'aujourd'hui. En marketing, le centre propose des formations en marketing digital, stratégie de marque, ainsi que gestion des réseaux sociaux et des campagnes publicitaires en ligne. Le secteur des ressources humaines est également une priorité avec des programmes axés sur la gestion des talents, le recrutement, la gestion des conflits, ainsi que le développement des compétences. Enfin, les formations dans le domaine social et santé permettent aux participants de se spécialiser dans l'accompagnement des personnes vulnérables, la gestion des structures sanitaires et sociales, et la prise en charge des enjeux sociaux de la population. Le Centre de Formation STF Mayotte se veut un acteur clé dans l'accompagnement des professionnels de demain, avec une forte volonté de contribuer à la croissance durable et à l'épanouissement social de Mayotte. A ce jour nous avons des centres ouverts dans 12 communes sur les 17 communes de Mayotte. En favorisant l'accès à des formations adaptées aux besoins spécifiques du territoire, le centre permet à ses apprenants de s'épanouir et de participer pleinement au développement de l'île proche de chez eux.");
+
+
+
+ALTER TABLE inscription ADD date_naissance DATE;
+
+ALTER TABLE inscription ADD genre_client VARCHAR (100);
+
+-- Inscription
+INSERT INTO inscription (nom_client, prenom_client) VALUES ("Bacar", "Daoud");
+INSERT INTO inscription (nom_client, prenom_client) VALUES ("Ali", "Hachim");
+INSERT INTO inscription (nom_client, prenom_client) VALUES ("Houmadi","Fatima" );
+INSERT INTO inscription (nom_client, prenom_client) VALUES ("Kamal", "Abdou");
+
+INSERT INTO  (date_naissance, ) VALUES (, );
+INSERT INTO inscription (date_naissance, genre_client) VALUES (, );
+INSERT INTO inscription (date_naissance, ) VALUES (, );
+
+
+UPDATE inscription SET date_naissance = "1999-02-15" WHERE id_client = 1;
+UPDATE inscription SET date_naissance = "2001-12-12" WHERE id_client = 2;
+UPDATE inscription SET date_naissance = "1998-04-18" WHERE id_client = 3;
+UPDATE inscription SET date_naissance = "1989-11-27" WHERE id_client = 4;
+
+
+UPDATE inscription SET genre_client = "Homme" WHERE id_client = 1;
+UPDATE inscription SET genre_client = "Homme" WHERE id_client = 2;
+UPDATE inscription SET genre_client = "Femme" WHERE id_client = 3;
+UPDATE inscription SET genre_client = "Homme" WHERE id_client = 4;
 
