@@ -119,20 +119,20 @@ app.get("/etudiants", (req, res) => {
     });
 
     //MODIFIER
-app.post("/new", (req, res) => {
-    //afficher le corps de ma requête
-    console.log("Corps requête BODY", req.body);
-    console.log("Corps requête NOM", req.body.nom);
-    console.log("Corps requête PRENOM", req.body.prenom);
-    console.log("Corps requête DATE DE NAISSANCE", req.body.date_naissance);
-    console.log("Corps requête GENRE", req.body.genre);
-   
-    let nom = req.body.nom;
-    let prenom = req.body.prenom;
-    let date_naissance = req.body.date_naissance;
-    let genre = req.body.genre;
-    let id = req.body.id;
-    let requeteSQL;
+    app.post("/new", (req, res) => {
+        //afficher le corps de ma requête
+        console.log("Corps requête BODY", req.body);
+        console.log("Corps requête NOM", req.body.nom);
+        console.log("Corps requête PRENOM", req.body.prenom);
+        console.log("Corps requête DATE DE NAISSANCE", req.body.date_naissance);
+        console.log("Corps requête GENRE", req.body.genre);
+    
+        let nom = req.body.nom;
+        let prenom = req.body.prenom;
+        let date_naissance = req.body.date_naissance;
+        let genre = req.body.genre;
+        let id = req.body.id;
+        let requeteSQL;
 
     //si id vide --> id = null
     if(req.body.id === "") { 
@@ -171,7 +171,7 @@ app.post("/new", (req, res) => {
 
 app.delete ("/new/:id", (req, res) => { //méthode delete
 
-    let idThe = req.params.id; //récupère l'id à partir de l'objet params
+    let id = req.params.id; //récupère l'id à partir de l'objet params
 
     //supprimer de la base de données
     req.getConnection((erreur, connection) => {
@@ -179,7 +179,7 @@ app.delete ("/new/:id", (req, res) => { //méthode delete
             console.log(erreur);
         } else { // sinon supprimer
             connection.query("DELETE FROM inscription WHERE id_client = ?", 
-                [idThe], (err, result) => {
+                [id], (err, result) => {
                 if (err) {
                     console.log(err);
                 } else { //afficher résultat sur la page
@@ -191,8 +191,5 @@ app.delete ("/new/:id", (req, res) => { //méthode delete
 )}  
     })
 });
-
-
-
 
 module.exports = app;
