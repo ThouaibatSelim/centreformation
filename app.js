@@ -126,27 +126,31 @@ app.get("/etudiants", (req, res) => {
         console.log("Corps requête PRENOM", req.body.prenom);
         console.log("Corps requête DATE DE NAISSANCE", req.body.date_naissance);
         console.log("Corps requête GENRE", req.body.genre);
+        console.log("Corps requête ADRESSE", req.body.adresse);
+        console.log("Corps requête NUMERO", req.body.numero);
+        console.log("Corps requête DIPLOME", req.body.diplome);
+        console.log("Corps requête SITUATION PROFESSIONELLE", req.body.situationpro);
     
         let nom = req.body.nom;
         let prenom = req.body.prenom;
         let date_naissance = req.body.date_naissance;
         let genre = req.body.genre;
-        let id = req.body.id;
+        let id_client = req.body.id_client;
         let requeteSQL;
 
     //si id vide --> id = null
-    if(req.body.id === "") { 
+    if(req.body.id_client === "") { 
         id = null;
-        requeteSQL = "INSERT INTO inscription (id_client, nom_client, prenom_client, date_naissance, genre_client) VALUES (?,?,?,?,?)";
+        requeteSQL = "INSERT INTO inscription (id_client, nom_client, prenom_client, date_naissance, genre_client, adresse_client, numero_client, dernier_diplome, situation_pro) VALUES (?,?,?,?,?,?,?,?,?)";
     } else{
             id = req.body.id;
-        requeteSQL = "UPDATE thes SET nom_client = ?, prenom_client = ?, date_naissance = ?, genre_client t = ? WHERE id_client = ?";
+        requeteSQL = "UPDATE thes SET nom_client = ?, prenom_client = ?, date_naissance = ?, genre_client = ?, adresse_client = ?, numero_client = ?, dernier_diplome = ?, situation_pro = ? WHERE id_client = ?";
         }
 
         //Ordre des données
         let ordreDonnees;
         if (id === null) {
-        ordreDonnees = [null, nom, prenom, date_naissance, genre];
+        ordreDonnees = [null, nom, prenom, date_naissance, genre, ];
         } else {
         ordreDonnees = [nom, prenom, date_naissance, genre, id];
         }
@@ -171,7 +175,7 @@ app.get("/etudiants", (req, res) => {
 
 app.delete ("/new/:id", (req, res) => { //méthode delete
 
-    let id = req.params.id; //récupère l'id à partir de l'objet params
+    let id_client = req.params.id_client; //récupère l'id à partir de l'objet params
 
     //supprimer de la base de données
     req.getConnection((erreur, connection) => {
@@ -179,7 +183,7 @@ app.delete ("/new/:id", (req, res) => { //méthode delete
             console.log(erreur);
         } else { // sinon supprimer
             connection.query("DELETE FROM inscription WHERE id_client = ?", 
-                [id], (err, result) => {
+                [id_client], (err, result) => {
                 if (err) {
                     console.log(err);
                 } else { //afficher résultat sur la page

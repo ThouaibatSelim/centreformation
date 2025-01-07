@@ -19,7 +19,7 @@ h3 {
     font-size: 1.8em; /* Taille de la police */
     margin: 20px 0; /* Espacement autour des titres */
     color: #F64c72;
-    /* Couleur du titre */
+    padding-left: 30px;
 }
 
 /* listes */
@@ -36,10 +36,15 @@ ul li {
     border: 2px outset  #cf3456; /* Bordure claire autour de chaque liste */
     border-radius: 8px; /* Coins arrondis pour un effet plus doux */
     padding-bottom: 30px;
+    margin-left: 20px;
     color: rgb(87, 38, 133);
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f1f1f1; 
+}
+
+ul li:hover{
+    color: #F64c72;/* Chagement de couleur au survol */
 }
 
 /*Liens */

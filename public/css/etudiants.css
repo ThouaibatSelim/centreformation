@@ -17,7 +17,8 @@ h3{
 h4{
     font-size: x-large;
     text-decoration: underline;
-    padding-left: 5px;
+    color:#242582;
+    padding-left: 30px;
 }
 
 /*liste*/
@@ -26,11 +27,6 @@ h4{
     list-style: none;
     color:#242582;
     padding-left: 30px;
-}
-
-form{
-    font-family: Cantarell;
-    color:#f1f1f1;
 }
 
 .modif{
@@ -51,7 +47,6 @@ form{
     border-radius: 5px;
 }
 
-
 input:active{
     transform: scale(0.9); /* effet click */
 }
@@ -65,7 +60,10 @@ form {
     width: 80%;  /* Largeur*/
     max-width: 600px;  /* Largeur maximale*/
     margin-bottom: 30px;  /*espace sous le formulaire */
+    margin-left: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: Cantarell;
+    color:#f1f1f1;
 
 }
 

@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Etudiants</title>
 </head>
-<body>
-    <%- include('partials/barrenav') %>
+    <body>
+<%- include('partials/barrenav') %>
 <br>
     <main>
     <h3>Nos étudiants</h3>
@@ -24,8 +24,8 @@
         <input type="button" value="Supprimer" class="supp" onclick="supprimerDonnees('<%= i.id_client %>') ">
         <br>
         <% }) %>
-<br><br>
-
+        <br><br> 
+        
 <!-- Saisie nouvel étudiant -->
         <h4>Nouvel Etudiant</h4>
         <br> 
@@ -40,21 +40,45 @@
         <label for="date">Date de naissance:</label>
         <input type="date" id="datedenaissance">
         <br> <br>
-        <label for="genre">Genre:</label>
+        <label for="genre">Genre:</label> 
         <!-- genre -->
         <select name="select" id="genre"> 
           <option value="Femme">Femme</option>
           <option value="Homme" >Homme</option>
         </select> 
-<br> <br>
-            <button type="submit" class="Enregistrer">Enregistrer</button>
-    
+        <br> <br>
+        <label for="">Adresse Postale:</label>
+        <input type="text" id="adresse" name="adresse" placeholder="Adresse Postale">
+        <br><br> 
+        
+        <label for="numero">Numéro de téléphone:</label> 
+        <input type="number" placeholder="Numéro de Téléphone" id="numero">
+        <br><br>
+        <label for="diplome">Dernier diplôme obtenu:</label> 
+        <input type="text" placeholder="Nom complet du diplôme" id="diplome">
+        <br><br>
+        <label for="situationpro">Situation professionelle:</label>
+        <!-- option situation professionelle -->
+        <select name="select" id="situationpro"> 
+            <option value="etudiant">Etudiant(e)</option>
+            <option value="salarie" >Salarié(e)</option>
+            <option value="entrepreneur">Entrepreneur(se)</option>
+            <option value="chomeur">Chômeur(se)</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br> <br>
+        <button type="submit" class="Enregistrer">Enregistrer</button>
+        
+    </form>
+</ol>
 
-    </ol>
 </main>
 <br> <br>
 <%- include('partials/footer') %>
-</body>
+</body>  
+
+
+
 
 <script> 
     function remplirDonnees(id, nom, prenom, age){
@@ -63,16 +87,18 @@
         document.querySelector("#age").value = age;
     }
 
-    function supprimerDonnees(nom, prenom, age){
-        let routeComplete = "new/" + id;
+    // function supprimerDonnees(nom, prenom, age){
+    //     let routeComplete = "new/" + id;
         
-        fetch(
-            routeComplete, {method : "DELETE"}
-        ).then(
-            (response) => response.json()
-        ).then(
-            (donnee) => window.location.href = donnee.routeRacine
-        )
-    }
+    //     fetch(
+    //         routeComplete, {method : "DELETE"}
+    //     ).then(
+    //         (response) => response.json()
+    //     ).then(
+    //         (donnee) => window.location.href = donnee.routeRacine
+    //     )
+    // }
+
+
 </script>
 </html>

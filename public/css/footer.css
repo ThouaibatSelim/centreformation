@@ -17,7 +17,8 @@ footer {
 /*h5*/
 h5{
     color: #060606;
-    font-size: medium;
+    font-size: large;
+    font-weight: 700;
 }
 
 /*icones*/
@@ -42,6 +43,13 @@ i{
 .foot{
     color: #060606;
 }
+
+a i{
+    font-size: 30px;
+    width: 40px;
+}
+
+
 
 
 
